@@ -149,7 +149,7 @@ plt.savefig('cost.png', dpi = 200)
 plt.show()
 
 
-#выводим результы в файл json и округляем переменные до минимального порядка входных данных, то есть до -6
+#выводим результы в файл json и округляем переменные до минимального порядка входных данных, то есть до -10
 
 data = {
   "Gauss-Newton": {"H0": round(opt.gauss_newton(y, f, j, x_0, k=k, tol=tol)[3][1], 10), "Omega": round(opt.gauss_newton(y, f, j, x_0, k=k, tol=tol)[3][0], 10), "nfev": round(opt.gauss_newton(y, f, j, x_0, k=k, tol=tol)[0], 10)},
